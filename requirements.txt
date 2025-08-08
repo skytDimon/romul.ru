@@ -1,0 +1,41 @@
+# FastAPI и сервер
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+
+# Шаблоны и статические файлы
+jinja2==3.1.2
+aiofiles==23.2.1
+
+# HTTP клиент
+httpx==0.28.1
+
+# Формы и валидация
+python-multipart==0.0.6
+pydantic==2.11.7
+pydantic-settings==2.2.1
+
+# Логирование и мониторинг
+structlog==24.1.0
+
+# Безопасность
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+
+# База данных (для будущего расширения)
+# sqlalchemy==2.0.27
+# alembic==1.13.1
+# asyncpg==0.29.0
+
+# Кэширование (для будущего расширения)
+# redis==5.0.1
+
+# Тестирование
+pytest==8.0.0
+pytest-asyncio==0.23.5
+httpx==0.28.1
+
+# Разработка
+black==24.1.1
+isort==5.13.2
+flake8==7.0.0
+mypy==1.8.0

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poizon — Romulus et Remus</title>
+    <meta name="description" content="Закажите товары с Poizon через Romulus et Remus">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <a href="/" style="color: white; text-decoration: none;">
+                    <h1>Romulus et Remus</h1>
+                </a>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="nav-links desktop-nav">
+                <a href="/">Главная</a>
+                <a href="/poizon">Poizon</a>
+                <a href="#about">О сервисе</a>
+                <a href="#contact">Контакты</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobileNav">
+            <button class="mobile-close-btn" id="mobileCloseBtn" aria-label="Закрыть меню">
+                <span></span>
+                <span></span>
+            </button>
+            <div class="mobile-nav-content">
+                <a href="/" class="mobile-nav-link">Главная</a>
+                <a href="/poizon" class="mobile-nav-link">Poizon</a>
+                <a href="#about" class="mobile-nav-link">О сервисе</a>
+                <a href="#contact" class="mobile-nav-link">Контакты</a>
+            </div>
+        </div>
+        
+        <div class="hero">
+            <div class="hero-content">
+                <h2 class="hero-title">Poizon</h2>
+                <p class="hero-description">Закажите любые товары с Poizon через наш сервис</p>
+                <a href="https://t.me/romul_manager?text=Привет хочу заказать товар с Poizon" class="cta-button" target="_blank" style="background: #1a1a1a; color: white; border: 2px solid #1a1a1a;">Заказать товар</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Service -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">О сервисе Poizon</h2>
+                <div class="about-text">
+                    <p>Poizon — это крупнейшая китайская платформа для покупки аутентичных товаров. Мы предлагаем полный спектр услуг по заказу товаров с Poizon.</p>
+                    <p>Наша команда специалистов поможет вам найти и заказать любые товары с Poizon: от одежды и обуви до электроники и аксессуаров. Мы гарантируем подлинность всех товаров и безопасность сделки.</p>
+                    <p>Мы работаем с Poizon, что позволяет нам предлагать лучшие цены и быструю доставку. Все товары проходят тщательную проверку на подлинность перед отправкой.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="collections">
+        <div class="container">
+            <h2 class="section-title">Что можно приобрести</h2>
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h3 style="font-size: 2rem; font-weight: 700; color: #1a1a1a; margin-bottom: 1rem;">Что можно приобрести</h3>
+            </div>
+            <div class="services-list" style="max-width: 800px; margin: 0 auto;">
+                <div class="service-item" style="display: flex; align-items: center; padding: 2rem; background: white; border-radius: 15px; margin-bottom: 1.5rem; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <div style="font-size: 3rem; margin-right: 2rem;">👕</div>
+                    <div>
+                        <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem; color: #1a1a1a;">Одежда и обувь</h3>
+                        <p style="color: #666; margin: 0;">Nike, Adidas, Supreme, Off-White и другие бренды</p>
+                    </div>
+                </div>
+                
+                <div class="service-item" style="display: flex; align-items: center; padding: 2rem; background: white; border-radius: 15px; margin-bottom: 1.5rem; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <div style="font-size: 3rem; margin-right: 2rem;">📱</div>
+                    <div>
+                        <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem; color: #1a1a1a;">Электроника</h3>
+                        <p style="color: #666; margin: 0;">Смартфоны, планшеты, ноутбуки и аксессуары</p>
+                    </div>
+                </div>
+                
+                <div class="service-item" style="display: flex; align-items: center; padding: 2rem; background: white; border-radius: 15px; margin-bottom: 1.5rem; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <div style="font-size: 3rem; margin-right: 2rem;">👜</div>
+                    <div>
+                        <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem; color: #1a1a1a;">Аксессуары</h3>
+                        <p style="color: #666; margin: 0;">Сумки, часы, украшения и другие аксессуары</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">Как это работает</h2>
+                <div class="about-text">
+                    <p><strong>1. Выбор товара</strong> — Найдите нужный товар на Poizon и скопируйте ссылку</p>
+                    <p><strong>2. Оформление заказа</strong> — Отправьте ссылку нашему менеджеру в Telegram</p>
+                    <p><strong>3. Подтверждение</strong> — Мы проверим наличие и сообщим итоговую стоимость</p>
+                    <p><strong>4. Оплата и доставка</strong> — После оплаты товар будет доставлен в течение 2-3 недель</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages -->
+    <section class="collections">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают именно нас</h2>
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h3 style="font-size: 2rem; font-weight: 700; color: #1a1a1a; margin-bottom: 1rem;">Почему выбирают именно нас</h3>
+            </div>
+            <div class="services-list" style="max-width: 800px; margin: 0 auto;">
+                <div class="service-item" style="display: flex; align-items: center; padding: 2rem; background: white; border-radius: 15px; margin-bottom: 1.5rem; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <div style="font-size: 3rem; margin-right: 2rem;">✅</div>
+                    <div>
+                        <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem; color: #1a1a1a;">Гарантия подлинности</h3>
+                        <p style="color: #666; margin: 0;">Все товары проходят проверку на оригинальность</p>
+                    </div>
+                </div>
+                
+                <div class="service-item" style="display: flex; align-items: center; padding: 2rem; background: white; border-radius: 15px; margin-bottom: 1.5rem; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <div style="font-size: 3rem; margin-right: 2rem;">🚚</div>
+                    <div>
+                        <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem; color: #1a1a1a;">Быстрая доставка</h3>
+                        <p style="color: #666; margin: 0;">Доставка по всей России в течение 2-3 недель</p>
+                    </div>
+                </div>
+                
+                <div class="service-item" style="display: flex; align-items: center; padding: 2rem; background: white; border-radius: 15px; margin-bottom: 1.5rem; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <div style="font-size: 3rem; margin-right: 2rem;">💰</div>
+                    <div>
+                        <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem; color: #1a1a1a;">Лучшие цены</h3>
+                        <p style="color: #666; margin: 0;">Прямые поставки позволяют предлагать минимальные цены</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title">Отзывы реальных покупателей</h2>
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <h3 style="font-size: 2rem; font-weight: 700; color: #1a1a1a; margin-bottom: 1rem;">Отзывы реальных покупателей</h3>
+            </div>
+            <div class="reviews-grid" style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <div class="review-card" style="background: white; border-radius: 15px; padding: 2rem; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                        <div style="font-size: 2rem; margin-right: 1rem;">⭐</div>
+                        <div>
+                            <h4 style="font-weight: 700; color: #1a1a1a; margin: 0;">Артем К.</h4>
+                            <p style="color: #666; margin: 0; font-size: 0.9rem;">Екатеринбург</p>
+                        </div>
+                    </div>
+                    <p style="color: #333; line-height: 1.6; margin: 0;">Заказал сумку Nike air jordan через Romul и Poizon. Доставили точно в срок, качество отличное. Рекомендую!</p>
+                </div>
+                
+                <div class="review-card" style="background: white; border-radius: 15px; padding: 2rem; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                        <div style="font-size: 2rem; margin-right: 1rem;">⭐</div>
+                        <div>
+                            <h4 style="font-weight: 700; color: #1a1a1a; margin: 0;">Полина М.</h4>
+                            <p style="color: #666; margin: 0; font-size: 0.9rem;">Екатеринбург</p>
+                        </div>
+                    </div>
+                    <p style="color: #333; line-height: 1.6; margin: 0;">Покупала сумку Guess через их сервис. Всё пришло как и хотела, товар оригинальный, бирки и серитфикаты на месте. Спасибо за качественный сервис!</p>
+                </div>
+                
+                <div class="review-card" style="background: white; border-radius: 15px; padding: 2rem; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                        <div style="font-size: 2rem; margin-right: 1rem;">⭐</div>
+                        <div>
+                            <h4 style="font-weight: 700; color: #1a1a1a; margin: 0;">Давид Г.</h4>
+                            <p style="color: #666; margin: 0; font-size: 0.9rem;">Екатеринбург</p>
+                        </div>
+                    </div>
+                    <p style="color: #333; line-height: 1.6; margin: 0;">Отличные цены и быстрая доставка. Заказал зипку Nike Tech Fleece, все как на фото. Буду заказывать еще!</p>
+                </div>
+                
+                <div class="review-card" style="background: white; border-radius: 15px; padding: 2rem; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                        <div style="font-size: 2rem; margin-right: 1rem;">⭐</div>
+                        <div>
+                            <h4 style="font-weight: 700; color: #1a1a1a; margin: 0;">Анна В.</h4>
+                            <p style="color: #666; margin: 0; font-size: 0.9rem;">Екатеринбург</p>
+                        </div>
+                    </div>
+                    <p style="color: #333; line-height: 1.6; margin: 0;">Познакомилась с владельцем на пвз СДЭК и решила заказать через их сервис. Первый раз заказывала через Poizon. Все объяснили, помогли с выбором. Очень довольна результатом!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- You may also like -->
+    <section style="padding: 4rem 0; background: linear-gradient(135deg, #f8f8f8 0%, #ffffff 100%); text-align: center; position: relative; overflow: hidden;">
+        <!-- Background decoration -->
+        <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: linear-gradient(45deg, rgba(26,26,26,0.03) 0%, rgba(26,26,26,0.01) 100%); border-radius: 50%; z-index: 1;"></div>
+        <div style="position: absolute; bottom: -30px; left: -30px; width: 150px; height: 150px; background: linear-gradient(45deg, rgba(26,26,26,0.02) 0%, rgba(26,26,26,0.005) 100%); border-radius: 50%; z-index: 1;"></div>
+        
+        <div class="container" style="position: relative; z-index: 2;">
+            <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; color: #1a1a1a; position: relative;">
+                You may also like
+                <div style="position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 60px; height: 3px; background: linear-gradient(90deg, #1a1a1a 0%, #666 100%); border-radius: 2px;"></div>
+            </h2>
+            <p style="color: #666; font-size: 1.1rem; margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">Откройте для себя другие коллекции, которые могут вас заинтересовать</p>
+            
+            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; max-width: 900px; margin: 0 auto;">
+                
+                <!-- Card 1 -->
+                <div style="background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); width: 420px; min-height: 280px; overflow: hidden; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; cursor: pointer;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.08)'">
+                    <div style="height: 240px; background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                        <img src="/static/img/tshirt1.png" alt="Acne Studios T-Shirt" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 2rem;">
+                        <h3 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 0.8rem; color: #1a1a1a; line-height: 1.3;">Acne Studios T-Shirt</h3>
+                        <p style="color: #666; margin-bottom: 1.5rem; font-size: 0.95rem; line-height: 1.5;">Премиальные футболки от Acne Studios с уникальным дизайном и качественными материалами</p>
+                        <a href="/acne" style="display: inline-block; padding: 0.8rem 1.5rem; background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); color: white; text-decoration: none; border-radius: 25px; font-size: 0.9rem; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(26,26,26,0.2);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(26,26,26,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(26,26,26,0.2)'">Смотреть коллекцию</a>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div style="background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); width: 420px; min-height: 280px; overflow: hidden; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; cursor: pointer;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.08)'">
+                    <div style="height: 240px; background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                        <img src="/static/img/tshirt2.png" alt="HP Health HP T-Shirt" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 2rem;">
+                        <h3 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 0.8rem; color: #1a1a1a; line-height: 1.3;">HP Health HP T-Shirt</h3>
+                        <p style="color: #666; margin-bottom: 1.5rem; font-size: 0.95rem; line-height: 1.5;">Футболки в стиле HP Health с современным дизайном и комфортной посадкой</p>
+                        <a href="/hphealth" style="display: inline-block; padding: 0.8rem 1.5rem; background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); color: white; text-decoration: none; border-radius: 25px; font-size: 0.9rem; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(26,26,26,0.2);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(26,26,26,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(26,26,26,0.2)'">Смотреть коллекцию</a>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div style="background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); width: 420px; min-height: 280px; overflow: hidden; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; cursor: pointer;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.08)'">
+                    <div style="height: 240px; background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                        <img src="/static/img/zip1.png" alt="Zip Hoodie Army" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                        <div style="position: absolute; top: 15px; right: 15px; background: linear-gradient(135deg, #FF6B35 0%, #e55a2b 100%); color: white; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 500;">Hot</div>
+                    </div>
+                    <div style="padding: 2rem;">
+                        <h3 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 0.8rem; color: #1a1a1a; line-height: 1.3;">Zip Hoodie Army</h3>
+                        <p style="color: #666; margin-bottom: 1.5rem; font-size: 0.95rem; line-height: 1.5;">Армейские худи с молнией в стиле милитари с практичным дизайном</p>
+                        <a href="/zip" style="display: inline-block; padding: 0.8rem 1.5rem; background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); color: white; text-decoration: none; border-radius: 25px; font-size: 0.9rem; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(26,26,26,0.2);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(26,26,26,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(26,26,26,0.2)'">Смотреть коллекцию</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="contact">
+        <div class="container">
+            <h2 class="section-title">Заказать товар с Poizon</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Для заказа товара с Poizon свяжитесь с нашим менеджером в Telegram. Отправьте ссылку на товар, и мы сообщим вам итоговую стоимость с учетом доставки.</p>
+                    <p><strong>В стоимость входит:</strong></p>
+                    <ul style="list-style: none; padding: 0; margin: 1rem 0;">
+                        <li style="margin: 0.5rem 0; padding-left: 1rem;">• Стоимость товара на Poizon</li>
+                        <li style="margin: 0.5rem 0; padding-left: 1rem;">• Комиссия за услуги</li>
+                        <li style="margin: 0.5rem 0; padding-left: 1rem;">• Доставка по России</li>
+                    </ul>
+                </div>
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="https://t.me/romul_manager?text=Привет хочу заказать товар с Poizon" class="cta-button" target="_blank" style="background: #1a1a1a; color: white; border: 2px solid #1a1a1a;">Заказать с Poizon</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Romulus et Remus.</p>
+        </div>
+    </footer>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html> 

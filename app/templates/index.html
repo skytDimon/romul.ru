@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romulus et Remus — Не одежда. Отношение.</title>
+    <meta name="description" content="Мы не магазин Мы — твой лук на завтра">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <h1>Romulus et Remus</h1>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="nav-links desktop-nav">
+                <a href="#collections">Коллекции</a>
+                <a href="/poizon">Poizon</a>
+                <a href="#about">О бренде</a>
+                <a href="#contact">Контакты</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobileNav">
+            <button class="mobile-close-btn" id="mobileCloseBtn" aria-label="Закрыть меню">
+                <span></span>
+                <span></span>
+            </button>
+            <div class="mobile-nav-content">
+                <a href="#collections" class="mobile-nav-link">Коллекции</a>
+                <a href="/poizon" class="mobile-nav-link">Poizon</a>
+                <a href="#about" class="mobile-nav-link">О бренде</a>
+                <a href="#contact" class="mobile-nav-link">Контакты</a>
+            </div>
+        </div>
+        
+        <div class="hero">
+            <div class="hero-content">
+                <h2 class="hero-title">Мы не магазин</h2>
+                <h3 class="hero-subtitle">Мы — твой лук на завтра</h3>
+                <p class="hero-description">Открой для себя коллекции, которые определяют стиль завтрашнего дня</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Quote Section -->
+    <section class="quote-section">
+        <div class="container">
+            <blockquote class="quote">
+                "Not clothes. An attitude."
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Collections -->
+    <section id="collections" class="collections">
+        <div class="container">
+            <h2 class="section-title">Коллекции</h2>
+            <div class="collections-grid">
+                <a href="/acne" class="collection-card wide-card" data-aos="fade-up">
+                    <div class="collection-image">
+                        <img src="/static/img/tshirt1.png" alt="Acne Studios T-Shirt" loading="lazy" decoding="async" style="width:100%;height:auto;object-fit:cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div style="display: none; align-items: center; justify-content: center; height: 100%; background: #f0f0f0; color: #666;">Изображение не найдено</div>
+                    </div>
+                    <div class="collection-content">
+                        <h3>Acne Studios T-Shirt</h3>
+                        <p>Премиальные футболки от Acne Studios</p>
+                        <span class="collection-link">Смотреть</span>
+                    </div>
+                </a>
+                
+                <a href="/hphealth" class="collection-card wide-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="collection-image">
+                        <img src="/static/img/tshirt2.png" alt="HP Health HP T-Shirt" loading="lazy" decoding="async" style="width:100%;height:auto;object-fit:cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div style="display: none; align-items: center; justify-content: center; height: 100%; background: #f0f0f0; color: #666;">Изображение не найдено</div>
+                    </div>
+                    <div class="collection-content">
+                        <h3>HP Health HP T-Shirt</h3>
+                        <p>Футболки в стиле HP Health</p>
+                        <span class="collection-link">Смотреть</span>
+                    </div>
+                </a>
+                
+                <a href="/zip" class="collection-card wide-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="collection-image">
+                        <picture>
+                                                          <source srcset="/static/img/zip1.webp" type="image/webp">
+                            <img src="/static/img/zip1.png" alt="Zip Hoodie Army" loading="lazy" decoding="async" style="width:100%;height:auto;object-fit:cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        </picture>
+                        <div style="display: none; align-items: center; justify-content: center; height: 100%; background: #f0f0f0; color: #666;">Изображение не найдено</div>
+                    </div>
+                    <div class="collection-content">
+                        <h3>Zip Hoodie Army</h3>
+                        <p>Армейские худи с молнией</p>
+                        <span class="collection-link">Смотреть</span>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Poizon Service -->
+            <div style="text-align: center; margin-top: 4rem; padding: 3rem; background: #f8f8f8; border-radius: 20px;">
+                <h3 style="font-size: 2rem; font-weight: 700; margin-bottom: 1rem; color: #1a1a1a;">Romul и Poizon</h3>
+                <p style="font-size: 1.1rem; color: #666; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Закажите любые товары с Poizon через наш сервис
+                </p>
+                <a href="/poizon" class="cta-button" style="background: #1a1a1a; color: white; border: 2px solid #1a1a1a;">
+                    Хочу купить товар с Poizon
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container" style="background: #fff; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); padding: 3rem 2rem; margin-top: 3rem;">
+            <div class="about-content">
+                <div class="about-text" style="margin-bottom: 0; text-align:center;">
+                    <p style="margin-bottom: 0rem;">Romulus et Remus — одежда родом из современного Екатеринбурга.</p>
+                    <p style="margin-bottom: 0rem;">Каждая деталь создаётся с вниманием и заботой — с мыслью о том, как она войдёт в гардероб и зазвучит по-новому в повседневности.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Связаться с нами</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Ваш Telegram" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Ваш вопрос" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Отправить</button>
+            </form>
+            <div id="formMessage" style="display: none; margin-top: 1rem; padding: 1rem; background: #d4edda; color: #155724; border-radius: 8px; text-align: center;">
+                Сообщение отправлено!
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <p style="color: #666; margin-bottom: 1rem;">Или свяжитесь с нами напрямую:</p>
+                <a href="https://t.me/romul_manager" target="_blank" style="color: #1a1a1a; text-decoration: none; font-weight: 600; border-bottom: 2px solid #1a1a1a; padding-bottom: 2px;">@romul_manager</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Romulus et Remus.</p>
+        </div>
+    </footer>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html> 

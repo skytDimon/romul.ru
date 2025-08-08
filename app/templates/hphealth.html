@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HP Health HP T-Shirt — Romulus et Remus</title>
+    <meta name="description" content="Коллекция HP Health HP T-Shirt — футболки в стиле HP Health">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <a href="/" style="color: white; text-decoration: none;">
+                    <h1>Romulus et Remus</h1>
+                </a>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="nav-links desktop-nav">
+                <a href="/">На главную</a>
+                <a href="/acne">Acne Studios T-Shirt</a>
+                <a href="/zip">Zip Hoodie Army</a>
+                <a href="/poizon">Poizon</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobileNav">
+            <button class="mobile-close-btn" id="mobileCloseBtn" aria-label="Закрыть меню">
+                <span></span>
+                <span></span>
+            </button>
+            <div class="mobile-nav-content">
+                <a href="/" class="mobile-nav-link">На главную</a>
+                <a href="/acne" class="mobile-nav-link">Acne Studios T-Shirt</a>
+                <a href="/zip" class="mobile-nav-link">Zip Hoodie Army</a>
+                <a href="/poizon" class="mobile-nav-link">Poizon</a>
+            </div>
+        </div>
+        
+        <div class="hero">
+            <div class="hero-content">
+                <h2 class="hero-title">HP Health HP T-Shirt</h2>
+                <h3 class="hero-subtitle">Футболки в стиле HP Health</h3>
+                <p class="hero-description">Зима 2024</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Section -->
+    <section class="product-section">
+        <div class="container">
+            <div class="product-showcase">
+                <!-- Mobile Gallery -->
+                <div class="mobile-product-gallery">
+                    <div class="mobile-gallery-container">
+                        <div class="mobile-gallery-slide active">
+                            <picture>
+                                <source srcset="/static/img/tshirt2.webp" type="image/webp">
+                                <img src="/static/img/tshirt2.png" alt="HP Health HP T-Shirt" loading="lazy" decoding="async">
+                            </picture>
+                        </div>
+                        <div class="mobile-gallery-slide">
+                            <img src="/static/img/tshirt2_2.jpeg" alt="HP Health HP T-Shirt - Вид 2" loading="lazy" decoding="async">
+                        </div>
+                        <div class="mobile-gallery-slide">
+                            <img src="/static/img/tshirt2_3.jpeg" alt="HP Health HP T-Shirt - Вид 3" loading="lazy" decoding="async">
+                        </div>
+                        <button class="mobile-gallery-nav mobile-gallery-prev" aria-label="Предыдущее изображение">‹</button>
+                        <button class="mobile-gallery-nav mobile-gallery-next" aria-label="Следующее изображение">›</button>
+                    </div>
+                    <div class="mobile-gallery-dots">
+                        <span class="mobile-gallery-dot active"></span>
+                        <span class="mobile-gallery-dot"></span>
+                        <span class="mobile-gallery-dot"></span>
+                    </div>
+                </div>
+                
+                <!-- Desktop Images -->
+                <div class="product-images">
+                    <div class="product-image-large">
+                        <picture>
+                            <source srcset="/static/img/tshirt2.webp" type="image/webp">
+                            <img src="/static/img/tshirt2.png" alt="HP Health HP T-Shirt" loading="lazy" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="product-images-grid">
+                        <div class="product-image-small">
+                            <img src="/static/img/tshirt2_2.jpeg" alt="HP Health HP T-Shirt - Вид 2" loading="lazy" decoding="async">
+                        </div>
+                        <div class="product-image-small">
+                            <img src="/static/img/tshirt2_3.jpeg" alt="HP Health HP T-Shirt - Вид 3" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <h2>HP Health HP T-Shirt</h2>
+                    <p class="product-description">Футболка в стиле HP Health с уникальным дизайном. Создана для тех, кто ценит качество и стиль в повседневной жизни.</p>
+                    <div class="product-info">
+                        <div class="info-item">
+                            <strong>Материал:</strong> 100% хлопок
+                        </div>
+                        <div class="info-item">
+                            <strong>Страна производства:</strong> Россия
+                        </div>
+                        <div class="info-item">
+                            <strong>Цена:</strong> ₽1,200
+                        </div>
+                    </div>
+                    <a href="https://t.me/romul_manager?text=Привет хочу заказать футболку HP Health HP" class="cta-button" target="_blank">Заказать</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- You may also like -->
+    <section style="padding: 4rem 0; background: linear-gradient(135deg, #f8f8f8 0%, #ffffff 100%); text-align: center; position: relative; overflow: hidden;">
+        <!-- Background decoration -->
+        <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: linear-gradient(45deg, rgba(26,26,26,0.03) 0%, rgba(26,26,26,0.01) 100%); border-radius: 50%; z-index: 1;"></div>
+        <div style="position: absolute; bottom: -30px; left: -30px; width: 150px; height: 150px; background: linear-gradient(45deg, rgba(26,26,26,0.02) 0%, rgba(26,26,26,0.005) 100%); border-radius: 50%; z-index: 1;"></div>
+        
+        <div class="container" style="position: relative; z-index: 2;">
+            <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; color: #1a1a1a; position: relative;">
+                You may also like
+                <div style="position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 60px; height: 3px; background: linear-gradient(90deg, #1a1a1a 0%, #666 100%); border-radius: 2px;"></div>
+            </h2>
+            <p style="color: #666; font-size: 1.1rem; margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">Откройте для себя другие коллекции, которые могут вас заинтересовать</p>
+            
+            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: nowrap; max-width: 900px; margin: 0 auto;">
+                
+                <!-- Card 1 -->
+                <div style="background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); width: 420px; overflow: hidden; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; cursor: pointer;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.08)'">
+                    <div style="height: 280px; background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                        <img src="/static/img/tshirt1.png" alt="Acne Studios T-Shirt" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 2rem;">
+                        <h3 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 0.8rem; color: #1a1a1a; line-height: 1.3;">Acne Studios T-Shirt</h3>
+                        <p style="color: #666; margin-bottom: 1.5rem; font-size: 0.95rem; line-height: 1.5;">Премиальные футболки от Acne Studios с уникальным дизайном и качественными материалами</p>
+                        <a href="/acne" style="display: inline-block; padding: 0.8rem 1.5rem; background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); color: white; text-decoration: none; border-radius: 25px; font-size: 0.9rem; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(26,26,26,0.2);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(26,26,26,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(26,26,26,0.2)'">Смотреть коллекцию</a>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div style="background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); width: 420px; overflow: hidden; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; cursor: pointer;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.08)'">
+                    <div style="height: 280px; background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                        <img src="/static/img/zip1.png" alt="Zip Hoodie Army" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                        <div style="position: absolute; top: 15px; right: 15px; background: linear-gradient(135deg, #FF6B35 0%, #e55a2b 100%); color: white; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 500;">Hot</div>
+                    </div>
+                    <div style="padding: 2rem;">
+                        <h3 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 0.8rem; color: #1a1a1a; line-height: 1.3;">Zip Hoodie Army</h3>
+                        <p style="color: #666; margin-bottom: 1.5rem; font-size: 0.95rem; line-height: 1.5;">Армейские худи с молнией в стиле милитари с практичным дизайном</p>
+                        <a href="/zip" style="display: inline-block; padding: 0.8rem 1.5rem; background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); color: white; text-decoration: none; border-radius: 25px; font-size: 0.9rem; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(26,26,26,0.2);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(26,26,26,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(26,26,26,0.2)'">Смотреть коллекцию</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Romulus et Remus.</p>
+        </div>
+    </footer>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html> 
