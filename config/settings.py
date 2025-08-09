@@ -13,7 +13,7 @@ class Settings(BaseSettings):
     ENVIRONMENT: str = "production"
     
     # Сервер
-    HOST: str = "127.0.0.1"
+    HOST: str = "0.0.0.0"
     PORT: int = 8000
     
     # Telegram

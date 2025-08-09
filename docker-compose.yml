@@ -1,0 +1,34 @@
+services:
+  app:
+    build: .
+    container_name: romulai-app
+    environment:
+      - ENVIRONMENT=production
+      - HOST=0.0.0.0
+      - PORT=8000
+      - LOG_LEVEL=INFO
+      # Вынеси токены в переменные окружения в реальном проде
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN:-}
+      - TELEGRAM_CHAT_ID=${TELEGRAM_CHAT_ID:-}
+    # ports:  # Оставляем закомментированным, наружу ходит Traefik
+    #   - "8000:8000"
+    networks:
+      - web
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.romulai.rule=Host(`romulus-et-remus.ru`)
+      - traefik.http.routers.romulai.entrypoints=websecure
+      - traefik.http.routers.romulai.tls.certresolver=le
+      # http -> https redirect
+      - traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https
+      - traefik.http.routers.romulai-insecure.rule=Host(`romulus-et-remus.ru`)
+      - traefik.http.routers.romulai-insecure.entrypoints=web
+      - traefik.http.routers.romulai-insecure.middlewares=redirect-to-https
+      - traefik.http.services.romulai.loadbalancer.server.port=8000
+    restart: unless-stopped
+
+networks:
+  web:
+    external: true
+
+
