@@ -9,13 +9,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/static/img/favicon.ico">
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <nav class="nav">
             <div class="logo">
-                <h1>Romulus et Remus</h1>
+                <a href="/" style="text-decoration: none; color: inherit; cursor: pointer;">
+                    <h1>Romulus et Remus</h1>
+                </a>
             </div>
             
             <!-- Desktop Navigation -->
@@ -162,7 +165,13 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Romulus et Remus.</p>
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                <p>&copy; 2025 Romulus et Remus.</p>
+                <div style="display: flex; gap: 2rem; align-items: center;">
+                    <a href="https://avito.ru/brands/i361891579" target="_blank" style="color: #666; text-decoration: none; font-weight: 500; transition: color 0.3s ease;" onmouseover="this.style.color='#333'" onmouseout="this.style.color='#666'">Avito</a>
+                    <a href="https://t.me/+tGJ2hyjQTrE1NTIy" target="_blank" style="color: #666; text-decoration: none; font-weight: 500; transition: color 0.3s ease;" onmouseover="this.style.color='#333'" onmouseout="this.style.color='#666'">Telegram</a>
+                </div>
+            </div>
         </div>
     </footer>
 

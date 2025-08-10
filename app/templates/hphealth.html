@@ -9,13 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/static/img/favicon.ico">
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <nav class="nav">
             <div class="logo">
-                <a href="/" style="color: white; text-decoration: none;">
+                <a href="/" style="color: white; text-decoration: none; cursor: pointer;">
                     <h1>Romulus et Remus</h1>
                 </a>
             </div>
@@ -138,32 +139,36 @@
             </h2>
             <p style="color: #666; font-size: 1.1rem; margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">Откройте для себя другие коллекции, которые могут вас заинтересовать</p>
             
-            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: nowrap; max-width: 900px; margin: 0 auto;">
+            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; max-width: 900px; margin: 0 auto;">
                 
                 <!-- Card 1 -->
-                <div style="background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); width: 420px; overflow: hidden; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; cursor: pointer;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.08)'">
-                    <div style="height: 280px; background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
-                        <img src="/static/img/tshirt1.png" alt="Acne Studios T-Shirt" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                <a href="/acne" style="text-decoration: none; color: inherit; display: block; width: 420px; max-width: 100%;">
+                    <div style="background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); overflow: hidden; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; cursor: pointer; height: 100%;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.08)'">
+                        <div style="height: 280px; background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                            <img src="/static/img/tshirt1.png" alt="Acne Studios T-Shirt" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                        </div>
+                        <div style="padding: 2rem;">
+                            <h3 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 0.8rem; color: #1a1a1a; line-height: 1.3;">Acne Studios T-Shirt</h3>
+                            <p style="color: #666; margin-bottom: 1.5rem; font-size: 0.95rem; line-height: 1.5;">Премиальные футболки от Acne Studios с уникальным дизайном и качественными материалами</p>
+                            <span style="display: inline-block; padding: 0.8rem 1.5rem; background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); color: white; text-decoration: none; border-radius: 25px; font-size: 0.9rem; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(26,26,26,0.2);">Смотреть коллекцию</span>
+                        </div>
                     </div>
-                    <div style="padding: 2rem;">
-                        <h3 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 0.8rem; color: #1a1a1a; line-height: 1.3;">Acne Studios T-Shirt</h3>
-                        <p style="color: #666; margin-bottom: 1.5rem; font-size: 0.95rem; line-height: 1.5;">Премиальные футболки от Acne Studios с уникальным дизайном и качественными материалами</p>
-                        <a href="/acne" style="display: inline-block; padding: 0.8rem 1.5rem; background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); color: white; text-decoration: none; border-radius: 25px; font-size: 0.9rem; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(26,26,26,0.2);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(26,26,26,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(26,26,26,0.2)'">Смотреть коллекцию</a>
-                    </div>
-                </div>
+                </a>
                 
-                <!-- Card 3 -->
-                <div style="background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); width: 420px; overflow: hidden; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; cursor: pointer;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.08)'">
-                    <div style="height: 280px; background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
-                        <img src="/static/img/zip1.png" alt="Zip Hoodie Army" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
-                        <div style="position: absolute; top: 15px; right: 15px; background: linear-gradient(135deg, #FF6B35 0%, #e55a2b 100%); color: white; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 500;">Hot</div>
+                <!-- Card 2 -->
+                <a href="/zip" style="text-decoration: none; color: inherit; display: block; width: 420px; max-width: 100%;">
+                    <div style="background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); overflow: hidden; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; cursor: pointer; height: 100%;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.08)'">
+                        <div style="height: 280px; background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                            <img src="/static/img/zip1.png" alt="Zip Hoodie Army" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                            <div style="position: absolute; top: 15px; right: 15px; background: linear-gradient(135deg, #FF6B35 0%, #e55a2b 100%); color: white; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 500;">Hot</div>
+                        </div>
+                        <div style="padding: 2rem;">
+                            <h3 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 0.8rem; color: #1a1a1a; line-height: 1.3;">Zip Hoodie Army</h3>
+                            <p style="color: #666; margin-bottom: 1.5rem; font-size: 0.95rem; line-height: 1.5;">Армейские худи с молнией в стиле милитари с практичным дизайном</p>
+                            <span style="display: inline-block; padding: 0.8rem 1.5rem; background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); color: white; text-decoration: none; border-radius: 25px; font-size: 0.9rem; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(26,26,26,0.2);">Смотреть коллекцию</span>
+                        </div>
                     </div>
-                    <div style="padding: 2rem;">
-                        <h3 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 0.8rem; color: #1a1a1a; line-height: 1.3;">Zip Hoodie Army</h3>
-                        <p style="color: #666; margin-bottom: 1.5rem; font-size: 0.95rem; line-height: 1.5;">Армейские худи с молнией в стиле милитари с практичным дизайном</p>
-                        <a href="/zip" style="display: inline-block; padding: 0.8rem 1.5rem; background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); color: white; text-decoration: none; border-radius: 25px; font-size: 0.9rem; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(26,26,26,0.2);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(26,26,26,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(26,26,26,0.2)'">Смотреть коллекцию</a>
-                    </div>
-                </div>
+                </a>
                 
             </div>
         </div>
@@ -172,7 +177,13 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Romulus et Remus.</p>
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                <p>&copy; 2025 Romulus et Remus.</p>
+                <div style="display: flex; gap: 2rem; align-items: center;">
+                    <a href="https://avito.ru/brands/i361891579" target="_blank" style="color: #666; text-decoration: none; font-weight: 500; transition: color 0.3s ease;" onmouseover="this.style.color='#333'" onmouseout="this.style.color='#666'">Avito</a>
+                    <a href="https://t.me/+tGJ2hyjQTrE1NTIy" target="_blank" style="color: #666; text-decoration: none; font-weight: 500; transition: color 0.3s ease;" onmouseover="this.style.color='#333'" onmouseout="this.style.color='#666'">Telegram</a>
+                </div>
+            </div>
         </div>
     </footer>
 
