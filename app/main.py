@@ -11,6 +11,7 @@ from config.settings import get_settings
 from app.api import contact_router, products_router, health_router
 from app.utils.logging import setup_logging
 from app.services.contact_service import ContactService
+from app.middleware import IPRestrictionMiddleware
 
 
 # Настройка логирования
@@ -46,6 +47,13 @@ app.add_middleware(
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
+)
+
+# Ограничение доступа к административным эндпоинтам по IP
+app.add_middleware(
+    IPRestrictionMiddleware,
+    admin_ips=get_settings().ADMIN_IPS,
+    restricted_paths=["/docs", "/redoc", "/openapi.json", "/health"]
 )
 
 # Trusted Host middleware для безопасности

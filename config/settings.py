@@ -34,6 +34,15 @@ class Settings(BaseSettings):
     SECRET_KEY: str = "your-secret-key-change-in-production"
     ALLOWED_HOSTS: list = ["*"]
     
+    # IP-адреса с доступом к административным эндпоинтам (/docs, /health)
+    ADMIN_IPS: list = [
+        "127.0.0.1",      # localhost
+        "::1",            # localhost IPv6
+        # Добавьте ваши IP-адреса здесь
+        # "192.168.1.100",  # пример домашнего IP
+        # "203.0.113.1",    # пример внешнего IP
+    ]
+    
     # API
     API_PREFIX: str = "/api/v1"
     
