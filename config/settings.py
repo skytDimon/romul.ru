@@ -14,7 +14,7 @@ class Settings(BaseSettings):
     
     # Сервер
     HOST: str = "0.0.0.0"
-    PORT: int = 4000
+    PORT: int = 8000
     
     # Telegram
     TELEGRAM_BOT_TOKEN: str = "7936936135:AAENnQtZ_u4C88PEHMYri5aNIyUqVXXKnEA"

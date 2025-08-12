@@ -50,11 +50,12 @@ app.add_middleware(
 )
 
 # Ограничение доступа к административным эндпоинтам по IP
-app.add_middleware(
-    IPRestrictionMiddleware,
-    admin_ips=get_settings().ADMIN_IPS,
-    restricted_paths=["/docs", "/redoc", "/openapi.json", "/health"]
-)
+# ВРЕМЕННО ОТКЛЮЧЕНО для устранения проблем с развертыванием
+# app.add_middleware(
+#     IPRestrictionMiddleware,
+#     admin_ips=get_settings().ADMIN_IPS,
+#     restricted_paths=["/docs", "/redoc", "/openapi.json", "/health"]
+# )
 
 # Trusted Host middleware для безопасности
 if get_settings().ENVIRONMENT == "production":
